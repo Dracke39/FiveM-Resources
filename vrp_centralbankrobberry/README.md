@@ -2,9 +2,13 @@
 
 The script includes 5 areas of robbery where the drills are used to open the safes, 1 area in the offices where bank files are stolen and 2 areas where the phone must be used by hackers to open the vault doors and the normal ones doors.
 
-Dependency:
+# Dependency:
 - [vRP](https://github.com/DunkoUK/dunko_vrp)
 - [mhacking](https://forum.cfx.re/t/release-simple-hacking-minigame/62095)
+
+# Installation:
+- Enter the script folder of your resource folder
+- Insert the file named centralbankrobberry.lua into the vrp\cfg\item directory and then insert the load_item_pack("centralbankrobberry") string above return cfg in the items.lua file in the vrp\cfg folder
 
 ## Robbery area
 ![Imgur](https://i.imgur.com/UQlnszI.png)
