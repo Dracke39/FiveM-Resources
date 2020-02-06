@@ -6,7 +6,7 @@ Dependency:
 
 ## Robbery area
 ![Imgur](https://i.imgur.com/UQlnszI.png)
-## 
+## Phone for hacking the doors
 ![Imgur](https://i.imgur.com/T70DHU7.jpg)
-## 
+## Zone of the robbery where the drills are used
 ![Imgur](https://i.imgur.com/YcLbtxz.jpg)
