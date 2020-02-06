@@ -1,4 +1,4 @@
-## vrp_centralbankrobberry
+# vrp_centralbankrobberry
 
 The script includes 5 areas of robbery where the drills are used to open the safes, 1 area in the offices where bank files are stolen and 2 areas where the phone must be used by hackers to open the vault doors and the normal ones doors.
 
