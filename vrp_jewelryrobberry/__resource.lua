@@ -16,7 +16,6 @@ ui_page("InteractSoundclient/client/html/index.html")
 files({
   "InteractSound/client/html/index.html",
   "InteractSound/client/html/sounds/allarm.ogg",
-  "InteractSound/client/html/sounds/drill.ogg",
 })
 
 ------
