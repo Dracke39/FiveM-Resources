@@ -1,6 +1,6 @@
 ## vrp_jewelryrobberry
 
-The script includes areas for jewelry collection with alarm to the police when the robbery begins.
+The script includes 25 areas for jewelry collection with alarm to the police when the robbery begins.
 
 Dependency:
 - [vRP](https://github.com/DunkoUK/dunko_vrp)
