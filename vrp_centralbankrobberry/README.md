@@ -9,6 +9,7 @@ The script includes 5 areas of robbery where the drills are used to open the saf
 # Installation:
 - Enter the script folder of your resource folder
 - Insert the file named `centralbankrobberry.lua` into the `vrp\cfg\item` directory and then insert the `load_item_pack("centralbankrobberry")` string above `return cfg` in the `items.lua` file in the `vrp\cfg` folder
+- Start the `vrp_centralbankrobberry` resource
 
 ## Robbery area
 ![Imgur](https://i.imgur.com/UQlnszI.png)
