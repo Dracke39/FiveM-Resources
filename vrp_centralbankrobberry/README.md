@@ -11,6 +11,8 @@ The script includes 5 areas of robbery where the drills are used to open the saf
 - Insert the file named `centralbankrobberry.lua` into the `vrp\cfg\item` directory and then insert the `load_item_pack("centralbankrobberry")` string above `return cfg` in the `items.lua` file in the `vrp\cfg` folder
 - Start the `vrp_centralbankrobberry` resource in .cfg file
 
+The script is not optimized to the maximum, in case someone wants to optimize it before republishing it in its own github respository or in fivem releases, it is obliged to communicate it to me and request my authorization. At that time when you download it you can change it to your liking without any problem but you cannot store it on third-party sites or fivem or github sites.
+
 ## Robbery area
 ![Imgur](https://i.imgur.com/UQlnszI.png)
 ## Phone for hacking the doors
