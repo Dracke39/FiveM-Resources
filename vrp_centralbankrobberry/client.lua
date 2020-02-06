@@ -545,6 +545,18 @@ Citizen.CreateThread(function()
     EndTextCommandSetBlipName(blip)
 end)
 
+Citizen.CreateThread(function()
+    blip = AddBlipForCoord(244.79832458496,225.91496276855,106.28783416748)
+    SetBlipSprite(blip, 428)
+    SetBlipDisplay(blip, 4)
+    SetBlipScale(blip, 0.6)
+    SetBlipColour(blip, 1)
+    SetBlipAsShortRange(blip, true)
+	BeginTextCommandSetBlipName("STRING")
+    AddTextComponentString("Bank emergency button")
+    EndTextCommandSetBlipName(blip)
+end)
+
 -- Function
 
 function position_verf(x, y, z, cx, cy, cz, radius)
@@ -592,9 +604,9 @@ function DrawSpecialText(m_text, showtime)
 	DrawSubtitleTimed(showtime, 1)
 end
 
--- NO USE THIS COMMAND
+-- THE USE OF THESE COMMANDS IS NOT RECOMANDED
 
-RegisterCommand('bankdooropen', function(source)
+--[[RegisterCommand('bankdooropen', function(source)
     updoorcloused = false
 end)
 
@@ -618,4 +630,4 @@ end)
 
 RegisterCommand('bankcaveauopen', function(source)
     caveaucloused = false
-end)
+end)--]]
