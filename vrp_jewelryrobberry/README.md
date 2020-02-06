@@ -14,4 +14,4 @@ At that time when you download it you can change it to your liking without any p
 ## Robbery area
 ![Imgur](https://i.imgur.com/JQorfed.jpg)
 ## Messages as the robbery begins
-![Imgur](https://i.imgur.com/6HjsCJT.jpg)
+![Imgur](https://i.imgur.com/6HjsCJT.jpg) ![Imgur](https://i.imgur.com/VhcEuLE.jpg)
