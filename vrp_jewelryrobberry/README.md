@@ -1,10 +1,15 @@
-## vrp_jewelryrobberry
+# vrp_jewelryrobberry
 
 The script includes 25 areas for jewelry collection with alarm to the police when the robbery begins.
 
-Dependency:
+## Dependency:
 - [vRP](https://github.com/DunkoUK/dunko_vrp)
 - [mhacking](https://forum.cfx.re/t/release-simple-hacking-minigame/62095)
+
+### Installation:
+- Enter the script folder of your resource folder
+- Insert the file named `jewelryrobberry.lua` into the `vrp\cfg\item` directory and then insert the `load_item_pack("jewelryrobberry")` string above `return cfg` in the `items.lua` file in the `vrp\cfg` folder
+- Start the `vrp_jewelryrobberry` resource in .cfg file
 
 The script includes in one of the 25 areas of the robbery also one in which money is stolen from the jewelery case.
 
