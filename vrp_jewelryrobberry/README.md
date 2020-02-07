@@ -17,7 +17,7 @@ The script is not optimized to the maximum, in case someone wants to optimize it
 At that time when you download it you can change it to your liking without any problem but you cannot store it on third-party sites or fivem or github sites.
 
 ### Support
-![Discord](https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png =250x)
+![Discord](https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png=250x)
 
 ## Started robberry blips appearance
 ![Imgur](https://i.imgur.com/LwFXack.png)
