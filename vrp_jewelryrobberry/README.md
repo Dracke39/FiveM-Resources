@@ -17,7 +17,7 @@ The script is not optimized to the maximum, in case someone wants to optimize it
 At that time when you download it you can change it to your liking without any problem but you cannot store it on third-party sites or fivem or github sites.
 
 ### Support
-![Discord](https://b.thumbs.redditmedia.com/OIDktcKCqI8n4CnTj2SNZAQtXjBWxo9Qah6ku96YsME.png)
+![Discord](https://i.imgur.com/dYXZCwQ.png)
 
 ## Started robberry blips appearance
 ![Imgur](https://i.imgur.com/LwFXack.png)
