@@ -38,4 +38,4 @@ The script is not optimized to the maximum, in case someone wants to optimize it
 
 
 ## Changelog:
-`Still nothing`
+- Added `antimation drill prop (08/02/2020)
