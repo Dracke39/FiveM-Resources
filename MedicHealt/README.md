@@ -1,0 +1,20 @@
+# MedicHealt
+
+The script makes sure to sign a release and then make the person lie down in a bed to receive the necessary care (bring the life bar to the maximum)
+
+### Dependency:
+- [vRP](https://github.com/DunkoUK/dunko_vrp)
+- [mhacking](https://forum.cfx.re/t/release-simple-hacking-minigame/62095)
+
+### Installation:
+- Enter the script folder of your resource folder
+- Start the `MedicHealt` resource in .cfg file
+
+### Support
+[![Discord](https://i.imgur.com/9GFVWqX.png)](https://discord.gg/Ev9WBKy) [![Telegram](https://i.imgur.com/RcZ4ALP.png)](https://t.me/Dracke)
+
+## Robbery area
+![Imgur](https://i.imgur.com/UQlnszI.png)
+
+## Changelog:
+`Nothing at the moment`
