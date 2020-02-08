@@ -34,3 +34,8 @@ The script is not optimized to the maximum, in case someone wants to optimize it
 ![Imgur](https://i.imgur.com/ePAKcRV.png)
 ## Cleaning dirty money || Illegal sale of bank documents
 ![Imgur](https://i.imgur.com/iADJyet.png) ![Imgur](https://i.imgur.com/nwry6Je.png)
+
+
+[details="Changelog"]
+`Still nothing`
+[/details]
