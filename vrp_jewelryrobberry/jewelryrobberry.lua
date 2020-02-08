@@ -1,6 +1,6 @@
 
 local items = {}
 
-items["jewelry"] = {"Gioielli","",nil,0.0}
+items["jewelry"] = {"Jewelry","",nil,0.0}
 
 return items
