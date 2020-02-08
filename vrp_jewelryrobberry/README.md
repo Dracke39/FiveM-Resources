@@ -30,4 +30,4 @@ At that time when you download it you can change it to your liking without any p
 
 
 ## Changelog:
-- Added `jewelryrobberry.lua` file
+- Added `jewelryrobberry.lua` file (08/02/2020)
