@@ -23,7 +23,7 @@ local playerLoc = GetEntityCoords(player)
 
 Citizen.CreateThread(function ()
     while true do
-        Citizen.Wait(5)
+        Citizen.Wait(10000)
         if updoorcloused == false then
             local door = GetClosestObjectOfType(261.84136962891,222.05204772949,106.28380584717, 1.0, 746855201, false, false, false)
             local door2 = GetClosestObjectOfType(265.55120849609,217.76226806641,110.28303527832, 1.0, 1956494919, false, false, false)
@@ -64,7 +64,7 @@ end)
 
 Citizen.CreateThread(function ()
     while true do
-        Citizen.Wait(5)
+        Citizen.Wait(10000)
         if caveaucloused == false then
             local door = GetClosestObjectOfType(254.03179931641,224.15879821777,101.88326263428, 1.0, 961976194, false, false, false)
             local door2 = GetClosestObjectOfType(252.61108398438,221.16389465332,101.68344116211, 1.0, 2786611474, false, false, false)
@@ -226,7 +226,7 @@ Citizen.CreateThread(function ()
             if statusbox1 == false then
                 DrawMarker(20, 257.6257019043,214.40907287598,101.68344116211, 0, 0, 0, 0, 0, 0, 0.401, 0.401, 0.401, 255, 255, 255, 50, 0, 0, 0, 1)
                 if position_verf(playerLoc.x, playerLoc.y, playerLoc.z, 257.6257019043,214.40907287598,101.68344116211-0.95, 1.3) then
-                    help_message("Press ~INPUT_CONTEXT~ to drill the box1")
+                    help_message("Press ~INPUT_CONTEXT~ to drill the box")
                     if IsControlJustReleased(1, 38) then
                         TriggerServerEvent('centralbankrobberry:checkdrill1')
                     end
@@ -235,7 +235,7 @@ Citizen.CreateThread(function ()
             if statusbox2 == false then
                 DrawMarker(20, 259.89172363281,217.94772338867,101.68343353271, 0, 0, 0, 0, 0, 0, 0.401, 0.401, 0.401, 255, 255, 255, 50, 0, 0, 0, 1)
                 if position_verf(playerLoc.x, playerLoc.y, playerLoc.z, 259.89172363281,217.94772338867,101.68343353271-0.95, 1.3) then
-                    help_message("Press ~INPUT_CONTEXT~ to drill the box2")
+                    help_message("Press ~INPUT_CONTEXT~ to drill the box")
                     if IsControlJustReleased(1, 38) then
                         TriggerServerEvent('centralbankrobberry:checkdrill2')
                     end
@@ -244,7 +244,7 @@ Citizen.CreateThread(function ()
             if statusbox3 == false then
                 DrawMarker(20, 264.28872680664,211.91584777832,101.68335723877, 0, 0, 0, 0, 0, 0, 0.401, 0.401, 0.401, 255, 255, 255, 50, 0, 0, 0, 1)
                 if position_verf(playerLoc.x, playerLoc.y, playerLoc.z, 264.28872680664,211.91584777832,101.68335723877-0.95, 1.3) then
-                    help_message("Press ~INPUT_CONTEXT~ to drill the box3")
+                    help_message("Press ~INPUT_CONTEXT~ to drill the box")
                     if IsControlJustReleased(1, 38) then
                         TriggerServerEvent('centralbankrobberry:checkdrill3')
                     end
@@ -253,7 +253,7 @@ Citizen.CreateThread(function ()
             if statusbox4 == false then
                 DrawMarker(20, 263.29931640625,216.5632019043,101.68338775635, 0, 0, 0, 0, 0, 0, 0.401, 0.401, 0.401, 255, 255, 255, 50, 0, 0, 0, 1)
                 if position_verf(playerLoc.x, playerLoc.y, playerLoc.z, 263.29931640625,216.5632019043,101.68338775635-0.95, 1.3) then
-                    help_message("Press ~INPUT_CONTEXT~ to drill the box4")
+                    help_message("Press ~INPUT_CONTEXT~ to drill the box")
                     if IsControlJustReleased(1, 38) then
                         TriggerServerEvent('centralbankrobberry:checkdrill4')
                     end
@@ -262,7 +262,7 @@ Citizen.CreateThread(function ()
             if statusbox5 == false then
                 DrawMarker(20, 265.98706054688,213.27047729492,101.68346405029, 0, 0, 0, 0, 0, 0, 0.401, 0.401, 0.401, 255, 255, 255, 50, 0, 0, 0, 1)
                 if position_verf(playerLoc.x, playerLoc.y, playerLoc.z, 265.98706054688,213.27047729492,101.68346405029-0.95, 1.3) then
-                    help_message("Press ~INPUT_CONTEXT~ to drill the box5")
+                    help_message("Press ~INPUT_CONTEXT~ to drill the box")
                     if IsControlJustReleased(1, 38) then
                         TriggerServerEvent('centralbankrobberry:checkdrill5')
                     end
