@@ -2,6 +2,9 @@
 
 The script makes sure to sign a release and then make the person lie down in a bed to receive the necessary care (bring the life bar to the maximum)
 
+### Used map:
+- [PillBox Medical Center](https://forum.cfx.re/t/release-pillbox-hospital-by-jobscraft/209288)
+
 ### Installation:
 - Enter the script folder of your resource folder
 - Start the `MedicHealt` resource in .cfg file
