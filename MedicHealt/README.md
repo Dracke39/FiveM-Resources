@@ -13,8 +13,12 @@ The script makes sure to sign a release and then make the person lie down in a b
 ### Support
 [![Discord](https://i.imgur.com/9GFVWqX.png)](https://discord.gg/Ev9WBKy) [![Telegram](https://i.imgur.com/RcZ4ALP.png)](https://t.me/Dracke)
 
-## Robbery area
-![Imgur](https://i.imgur.com/UQlnszI.png)
+## Area where the medical form is signed
+![Imgur](https://i.imgur.com/NlCoMxo.png)
+## Person while signing
+![Imgur](https://i.imgur.com/MQjbGDX.jpg)
+## Person in the couch during medical treatment
+![Imgur](https://i.imgur.com/kFFofqU.png)
 
 ## Changelog:
 `Nothing at the moment`
