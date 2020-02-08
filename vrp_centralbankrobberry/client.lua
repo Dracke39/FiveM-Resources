@@ -13,6 +13,8 @@ canrob = true
 updoorcloused = true
 caveaucloused = true
 drill = 0
+PlayerHasProp = false
+PlayerProps = {}
 
 local player = GetPlayerPed(-1)
 local playerLoc = GetEntityCoords(player)
@@ -281,15 +283,17 @@ end)
 
 RegisterNetEvent('centralbankrobberry:boxuse1')
 AddEventHandler('centralbankrobberry:boxuse1', function()
-    SetEntityCoords(player, 257.6257019043,214.40907287598,101.68344116211)
+    SetEntityCoords(player, 257.23168945313,214.84596252441,101.68336486816)
     SetEntityHeading(player, 155.43)
     loadAnimDict( "anim@heists@fleeca_bank@drilling" ) 
     TaskPlayAnim(GetPlayerPed(-1), "anim@heists@fleeca_bank@drilling", "drill_straight_start", 8.0, 1.0, 139000, 2, 0, false, false, false)
+    AddPropToPlayer("hei_prop_heist_drill", 28422, 0, 0, 0, 0, 0, 0)
     TriggerServerEvent('InteractSound_SV:PlayOnSource', 'drill', 0.1)
     statusbox1 = true
     drill = drill+1
     DrawSpecialText("Drilling... (".. drill .. "/6)", 139000)
     SetTimeout(139200 ,function()
+        DestroyAllProps()
         TriggerServerEvent('centralbankrobberry:give')
         loadAnimDict( "amb@prop_human_bum_bin@base" ) 
         TaskPlayAnim(GetPlayerPed(-1), "amb@prop_human_bum_bin@base", "base", 8.0, 1.0, 3000, 2, 0, false, false, false)
@@ -298,10 +302,11 @@ end)
 
 RegisterNetEvent('centralbankrobberry:boxuse2')
 AddEventHandler('centralbankrobberry:boxuse2', function()
-    SetEntityCoords(player, 259.89172363281,217.94772338867,101.68343353271)
-    SetEntityHeading(player, 339.90)
+    SetEntityCoords(player, 259.77404785156,217.56546020508,101.68016052246)
+    SetEntityHeading(player, 342.9)
     loadAnimDict( "anim@heists@fleeca_bank@drilling" ) 
     TaskPlayAnim(GetPlayerPed(-1), "anim@heists@fleeca_bank@drilling", "drill_straight_start", 8.0, 1.0, 139000, 2, 0, false, false, false)
+    AddPropToPlayer("hei_prop_heist_drill", 28422, 0, 0, 0, 0, 0, 0)
     TriggerServerEvent('InteractSound_SV:PlayOnSource', 'drill', 0.1)
     statusbox2 = true
     drill = drill+1
@@ -315,10 +320,11 @@ end)
 
 RegisterNetEvent('centralbankrobberry:boxuse3')
 AddEventHandler('centralbankrobberry:boxuse3', function()
-    SetEntityCoords(player, 264.28872680664,211.91584777832,101.68335723877)
+    SetEntityCoords(player, 264.43585205078,212.34107971191,101.68003082275)
     SetEntityHeading(player, 160.92)
     loadAnimDict( "anim@heists@fleeca_bank@drilling" ) 
     TaskPlayAnim(GetPlayerPed(-1), "anim@heists@fleeca_bank@drilling", "drill_straight_start", 8.0, 1.0, 139000, 2, 0, false, false, false)
+    AddPropToPlayer("hei_prop_heist_drill", 28422, 0, 0, 0, 0, 0, 0)
     TriggerServerEvent('InteractSound_SV:PlayOnSource', 'drill', 0.1)
     statusbox3 = true
     drill = drill+1
@@ -332,10 +338,11 @@ end)
 
 RegisterNetEvent('centralbankrobberry:boxuse4')
 AddEventHandler('centralbankrobberry:boxuse4', function()
-    SetEntityCoords(player, 263.29931640625,216.5632019043,101.68338775635)
-    SetEntityHeading(player, 339.90)
+    SetEntityCoords(player, 263.19622802734,216.28149414063,101.68132781982)
+    SetEntityHeading(player, 348.90)
     loadAnimDict( "anim@heists@fleeca_bank@drilling" ) 
     TaskPlayAnim(GetPlayerPed(-1), "anim@heists@fleeca_bank@drilling", "drill_straight_start", 8.0, 1.0, 139000, 2, 0, false, false, false)
+    AddPropToPlayer("hei_prop_heist_drill", 28422, 0, 0, 0, 0, 0, 0)
     TriggerServerEvent('InteractSound_SV:PlayOnSource', 'drill', 0.1)
     statusbox4 = true
     drill = drill+1
@@ -349,10 +356,11 @@ end)
 
 RegisterNetEvent('centralbankrobberry:boxuse5')
 AddEventHandler('centralbankrobberry:boxuse5', function()
-    SetEntityCoords(player, 265.98706054688,213.27047729492,101.68346405029)
+    SetEntityCoords(player, 265.70397949219,213.3698425293,101.68143463135)
     SetEntityHeading(player, 250.66)
     loadAnimDict( "anim@heists@fleeca_bank@drilling" ) 
     TaskPlayAnim(GetPlayerPed(-1), "anim@heists@fleeca_bank@drilling", "drill_straight_start", 8.0, 1.0, 139000, 2, 0, false, false, false)
+    AddPropToPlayer("hei_prop_heist_drill", 28422, 0, 0, 0, 0, 0, 0)
     TriggerServerEvent('InteractSound_SV:PlayOnSource', 'drill', 0.1)
     statusbox5 = true
     drill = drill+1
@@ -603,6 +611,41 @@ function DrawSpecialText(m_text, showtime)
 	AddTextComponentString(m_text)
 	DrawSubtitleTimed(showtime, 1)
 end
+
+function LoadPropDict(model)
+    while not HasModelLoaded(GetHashKey(model)) do
+      RequestModel(GetHashKey(model))
+      Wait(10)
+    end
+end
+  
+function DestroyAllProps()
+    for _,v in pairs(PlayerProps) do
+      DeleteEntity(v)
+    end
+    PlayerHasProp = false
+end
+  
+function AddPropToPlayer(prop1, bone, off1, off2, off3, rot1, rot2, rot3)
+    local Player = PlayerPedId()
+    local x,y,z = table.unpack(GetEntityCoords(Player))
+  
+    if not HasModelLoaded(prop1) then
+      LoadPropDict(prop1)
+    end
+  
+    prop = CreateObject(GetHashKey(prop1), x, y, z+0.2,  true,  true, true)
+    AttachEntityToEntity(prop, Player, GetPedBoneIndex(Player, bone), off1, off2, off3, rot1, rot2, rot3, true, true, false, true, 1, true)
+    table.insert(PlayerProps, prop)
+    PlayerHasProp = true
+    SetModelAsNoLongerNeeded(prop1)
+end
+
+AddEventHandler('onResourceStop', function(resource)
+    if resource == GetCurrentResourceName() then
+      DestroyAllProps()
+    end
+end)
 
 -- THE USE OF THESE COMMANDS IS NOT RECOMANDED
 
