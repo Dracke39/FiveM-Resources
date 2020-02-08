@@ -1,3 +1,4 @@
+![Imgur](https://i.imgur.com/dkIDwQn.png)
 # vrp_jewelryrobberry
 
 The script includes 25 areas for jewelry collection with alarm to the police when the robbery begins.
