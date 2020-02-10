@@ -1,4 +1,4 @@
-# MedicHealt
+# MedicHealth
 ![Imgur](https://i.imgur.com/88EOmWQ.png)
 
 The script makes sure to sign a release and then make the person lie down in a bed to receive the necessary care (bring the life bar to the maximum)
@@ -8,7 +8,7 @@ The script makes sure to sign a release and then make the person lie down in a b
 
 ### Installation:
 - Enter the script folder of your resource folder
-- Start the `MedicHealt` resource in .cfg file
+- Start the `MedicHealth` resource in .cfg file
 
 ### Support
 [![Discord](https://i.imgur.com/9GFVWqX.png)](https://discord.gg/Ev9WBKy) [![Telegram](https://i.imgur.com/RcZ4ALP.png)](https://t.me/Dracke)
