@@ -135,7 +135,7 @@ AddEventHandler('centralbankrobberry:phone1', function()
     if vRP.hasGroup({user_id,"police"}) then
         vRPclient.notify(player,{"~r~Cops can't rob banks."})
     else
-        if #cops >= 2 then
+        if #cops >= 7 then
             if vRP.tryGetInventoryItem({user_id,"bank_phone",1,false}) then
                 TriggerClientEvent('centralbankrobberry:phoneclient1', source)
             else
