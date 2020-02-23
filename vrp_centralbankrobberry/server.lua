@@ -131,11 +131,18 @@ RegisterServerEvent('centralbankrobberry:phone1')
 AddEventHandler('centralbankrobberry:phone1', function()
     local user_id = vRP.getUserId({source})
     local player = vRP.getUserSource({user_id})
-    if(user_id)then
-        if vRP.tryGetInventoryItem({user_id,"bank_phone",1,false}) then
-            TriggerClientEvent('centralbankrobberry:phoneclient1', source)
+    local cops = vRP.getUsersByGroup({"police"})
+    if vRP.hasGroup({user_id,"police"}) then
+        vRPclient.notify(player,{"~r~Cops can't rob banks."})
+    else
+        if #cops >= 2 then
+            if vRP.tryGetInventoryItem({user_id,"bank_phone",1,false}) then
+                TriggerClientEvent('centralbankrobberry:phoneclient1', source)
+            else
+                vRPclient.notify(player,{"You don't have ~r~1 Hacking Phone"})
+            end
         else
-            vRPclient.notify(player,{"You don't have ~r~1 Hacking Phone"})
+            vRPclient.notify(player,{"~r~Not enough cops online."})
         end
     end
 end)
