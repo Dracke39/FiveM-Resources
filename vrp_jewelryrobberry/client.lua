@@ -40,32 +40,37 @@ Citizen.CreateThread(function ()
                 if position_verf(playerLoc.x, playerLoc.y, playerLoc.z, -631.1552734375,-229.40916442871,38.057052612305-0.95, 2) then
                     help_message("Press ~INPUT_CONTEXT~ to start the jewelry robbery")
                     if IsControlJustReleased(1, 38) then
-                        notifypicture_message("CHAR_DETONATEPHONE",2,"Robbery jewelry",false,"~r~The robbery has begun! Steal everything you can!")
-                        notifypicture_message("CHAR_DETONATEPHONE",2,"Robbery jewelry",false,"~r~You have 30 seconds to steal everything before the police alarm goes off!")
-                        robbing = true
-                        nextrobbing = false
-                        if cancelled == false then
-                            SetTimeout(30000, function()
-                                if cancelled == false then
-                                    notifypicture_message("CHAR_DETONATEPHONE",1,"Robbery jewelry",false,"~r~Can you hear it? The alarm went off the police were warned of the robbery!")
-                                    TriggerServerEvent('InteractSound_SV:PlayOnSource', 'allarm', 0.1)
-                                    --TriggerServerEvent('jewelryrobberry:allarmpolice')
-                                    notifypicture_message("CHAR_CALL911",1,"Police Department",false,"~r~At the moment there is a robbery at the jewelry store")
-                                end
-                            end)
-                        elseif cancelled == true then
-                            notifypicture_message("CHAR_CALL911",1,"Police Department",false,"~r~At the moment there is a robbery at the jewelry store")
-                        end
-                        SetTimeout(3600000, function()
-                            robbing = false
-                            nextrobbing = true
-                            cancelled = false
-                        end)
+                        TriggerServerEvent("jewelryrobberry:serverstart")
                     end
                 end
             end
         end
     end
+end)
+
+RegisterNetEvent('jewelryrobberry:start')
+AddEventHandler('jewelryrobberry:start', function()
+    notifypicture_message("CHAR_DETONATEPHONE",2,"Robbery jewelry",false,"~r~The robbery has begun! Steal everything you can!")
+    notifypicture_message("CHAR_DETONATEPHONE",2,"Robbery jewelry",false,"~r~You have 30 seconds to steal everything before the police alarm goes off!")
+    robbing = true
+    nextrobbing = false
+    if cancelled == false then
+        SetTimeout(30000, function()
+            if cancelled == false then
+                notifypicture_message("CHAR_DETONATEPHONE",1,"Robbery jewelry",false,"~r~Can you hear it? The alarm went off the police were warned of the robbery!")
+                TriggerServerEvent('InteractSound_SV:PlayOnSource', 'allarm', 0.1)
+                --TriggerServerEvent('jewelryrobberry:allarmpolice')
+                notifypicture_message("CHAR_CALL911",1,"Police Department",false,"~r~At the moment there is a robbery at the jewelry store")
+            end
+        end)
+    elseif cancelled == true then
+        notifypicture_message("CHAR_CALL911",1,"Police Department",false,"~r~At the moment there is a robbery at the jewelry store")
+    end
+    SetTimeout(3600000, function()
+        robbing = false
+        nextrobbing = true
+        cancelled = false
+    end)
 end)
 
 Citizen.CreateThread(function ()
