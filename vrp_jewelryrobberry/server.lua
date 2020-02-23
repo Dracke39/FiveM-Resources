@@ -8,6 +8,22 @@ local rewardjew = math.random(3,13)
 local rewardmoney = math.random(525,5974)
 local moneygive = math.random(5120,7421)
 
+RegisterServerEvent("jewelryrobberry:serverstart")
+AddEventHandler("jewelryrobberry:serverstart", function()
+    local user_id = vRP.getUserId({source})
+    local player = vRP.getUserSource({user_id})
+    local cops = vRP.getUsersByGroup({"police"})
+    if vRP.hasGroup({user_id,"police"}) then
+        vRPclient.notify(player,{"~r~Cops can't rob banks."})
+    else
+        if #cops >= 7 then
+            TriggerClientEvent("jewelryrobberry:start", source)
+        else
+            vRPclient.notify(player,{"~r~Not enough cops online."})
+        end
+    end
+end)
+
 RegisterServerEvent('jewelryrobberry:sucess')
 AddEventHandler('jewelryrobberry:sucess', function()
     local user_id = vRP.getUserId({source})
@@ -40,6 +56,6 @@ AddEventHandler('jewelryrobberry:allarmpolice', function()
     local user_id = vRP.getUserId({source})
     local player = vRP:getUserSource({user_id})
     if(user_id)then
-        vRP.sendServiceAlert(nil, "police",-630.17553710938,-236.52540588379,38.0570602416992-0.95,"Robbery in progress at the jewelry store!")
+        vRP.sendServiceAlert({nil, "police",-630.17553710938,-236.52540588379,38.0570602416992-0.95,"Robbery in progress at the jewelry store!"})
     end
 end)
