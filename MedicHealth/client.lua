@@ -170,3 +170,15 @@ AddEventHandler('onResourceStop', function(resource)
       FreezeEntityPosition(GetPlayerPed(-1), false)
     end
 end)
+
+AddEventHandler('playerDropped', function (reason)
+    FreezeEntityPosition(GetPlayerPed(-1), false)
+    DestroyAllProps()
+end)
+
+AddEventHandler("playerConnecting", function (connecting)
+    SetTimeout(15000, function()
+        FreezeEntityPosition(GetPlayerPed(-1), false)
+        DestroyAllProps()
+    end)
+end)
