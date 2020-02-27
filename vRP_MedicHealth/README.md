@@ -24,4 +24,4 @@ The script makes sure to sign a release and then make the person lie down in a b
 ![Imgur](https://i.imgur.com/kFFofqU.png)
 
 ## Changelog:
-`Nothing at the moment`
+- Added an unfreeze after a disconnection or crash during the healing session (27/02/2020)
