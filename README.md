@@ -4,7 +4,7 @@
 Script Name | FiveM Page | GitHub page | Type Framework
 ------------|------------|-------------|---------------
 Antivehroll | NONE | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/Antivehroll) | Standalone
-InteractNPCLocation | [Go](https://forum.cfx.re/t/release-standalone-interactnpclocation/1046740) | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/InteractNPCLocation)
+InteractNPCLocation | [Go](https://forum.cfx.re/t/release-standalone-interactnpclocation/1046740) | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/InteractNPCLocation) | Standalone
 InteractTeleport | [Go](https://forum.cfx.re/t/release-standalone-interactteleport/1046667) | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/InteractTeleport) | Standalone
 StopDropPedWeapon | NONE | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/StopDropPedWeapon) | Standalone
 MedicHealth | [Go](https://forum.cfx.re/t/standalone-or-vrp-realese-medichealth/1012375/30) | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/MedicHealth) | Standalone
