@@ -1,8 +1,8 @@
 # FiveM-Resources
 
 
-Script Name | FiveM Page | GitHub page | Type
-------------|------------|-------------|-----
+Script Name | FiveM Page | GitHub page | Type Framework
+------------|------------|-------------|---------------
 Antivehroll | NONE | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/Antivehroll) | Standalone
 InteractTeleport | NONE | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/InteractTeleport) | Standalone
 StopDropPedWeapon | NONE | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/StopDropPedWeapon) | Standalone
