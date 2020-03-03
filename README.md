@@ -9,3 +9,5 @@ StopDropPedWeapon | NONE | [Go](https://github.com/Dracke39/FiveM-Resources/tree
 MedicHealth | [Go](https://forum.cfx.re/t/standalone-or-vrp-realese-medichealth/1012375/30) | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/MedicHealth) | Standalone
 vRP_MedicHealt | [Go](https://forum.cfx.re/t/standalone-or-vrp-realese-medichealth/1012375/30) | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/vRP_MedicHealth) | vRP
 vrp_HakingLight | NONE | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/vrp_HackingLight) | vRP
+vrp_centralbankrobberry | [Go](https://forum.cfx.re/t/vrp-realese-vrp-centralbankrobberry/1011075) | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/vrp_centralbankrobberry) | vRP
+vrp_jewelryrobberry | [Go](https://forum.cfx.re/t/vrp-realese-vrp-jewelryrobberry/1011666) | [Go](https://github.com/Dracke39/FiveM-Resources/tree/master/vrp_jewelryrobberry) | vRP
