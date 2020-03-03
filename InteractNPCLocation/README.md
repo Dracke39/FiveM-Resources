@@ -1,5 +1,5 @@
 # InteractNPCLocation
-Adds NPCs to various venues such as markets, clothing stores, armories and more
+Adds NPCs to various venues such as markets, clothing stores, armories and more. An NPC animation is also added (default arms crossed)
 
 ### Installation:
 - Enter the script folder of your resource folder
