@@ -5,10 +5,13 @@ The script includes various functions and is all managed by just a few lines of 
 ### Features:
 - Teleportation from area to area
 - Change the text that appears to you by entering the Teleport area
-- Change the color of the marker [Panel](https://www.rapidtables.com/web/color/RGB_Color.html)
 - The TP of the whole vehicle with the person inside
 - Choose whether to teleport only the person or even the vehicle in which he or she is staying
-- Change the type of marker [Wiki](https://docs.fivem.net/docs/game-references/markers/)
+- Change the color of the marker [(Panel)](https://www.rapidtables.com/web/color/RGB_Color.html)
+- Change the type of marker [(Wiki)](https://docs.fivem.net/docs/game-references/markers/)
+- Change the marker range
+- Change the button for teleportation [(Wiki)](https://docs.fivem.net/docs/game-references/controls/)
+- Change whether to create a blip on the map with your own characteristics or not [(Wiki)](https://docs.fivem.net/docs/game-references/blips/)
 
 ### Installation:
 - Enter the script folder of your resource folder
