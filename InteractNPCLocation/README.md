@@ -4,7 +4,6 @@ Adds NPCs to various venues such as markets, clothing stores, armories and more.
 ### Installation:
 - Enter the script folder of your resource folder
 - Start the `InteractNPCLocation` resource in .cfg file
-- Restart the `InteractNPCLocation` resource in .cfg file for fix the resource
 
 ### Support
 [![Discord](https://i.imgur.com/9GFVWqX.png)](https://discord.gg/Ev9WBKy) [![Telegram](https://i.imgur.com/RcZ4ALP.png)](https://t.me/Dracke)
@@ -18,4 +17,4 @@ Adds NPCs to various venues such as markets, clothing stores, armories and more.
 ![Imgur](https://i.imgur.com/fMLcxdt.png)
 
 ## Changelog:
-- `Nothing at the moment`
+- Fixed start resource bug (04/03/2020)
