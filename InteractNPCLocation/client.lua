@@ -55,7 +55,7 @@ markets = {
 
 }
 
-AddEventHandler('onResourceStart', function(resourceName)
+AddEventHandler('onClientResourceStart', function(resourceName)
     if (GetCurrentResourceName() ~= resourceName) then
       return
     end
