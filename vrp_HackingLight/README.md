@@ -1,13 +1,13 @@
 
 # vrp_HackingLight
-The script makes sure to sign a release and then make the person lie down in a bed to receive the necessary care (bring the life bar to the maximum)
+The script allows you to hack an external panel from the city's power station (marked on the map with a blip) in order to enter open the security door and thus be able to get to the machinery. Beware that the machines have a failure rate so you could get shocked and sometimes even die. The script also allows you to repair these electricity stations by calling a technician.
 
 ### Dependency:
 - [vRP](https://github.com/DunkoUK/dunko_vrp)
 
 ### Installation:
 - Enter the script folder of your resource folder
-- Start the `vRP_MedicHealth` resource in .cfg file
+- Start the `vrp_HackingLight` resource in .cfg file
 
 ## Changelog:
-- Added an unfreeze after a disconnection or crash during the healing session (27/02/2020)
+- `Nothing at the moment`
