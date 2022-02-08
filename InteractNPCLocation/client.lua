@@ -55,10 +55,7 @@ markets = {
 
 }
 
-AddEventHandler('onClientResourceStart', function(resourceName)
-    if (GetCurrentResourceName() ~= resourceName) then
-      return
-    end
+AddEventHandler('playerSpawned', function(resourceName)
     for _,location in ipairs(markets) do
         x = location[1]
         y = location[2]
@@ -71,11 +68,12 @@ AddEventHandler('onClientResourceStart', function(resourceName)
         animbone = location[7]
 
         local Hash = GetHashKey(model)
-        local Ped = CreatePed(1, Hash, x,y,z-0.95, 0.0, false, true)
-        if not HasModelLoaded(Hash) then
+        repeat 
+            Wait(200)
             RequestModel(Hash)
-            Citizen.Wait(200)
-        end
+        until HasModelLoaded(Hash)
+        local Ped = CreatePed(1, Hash, x,y,z-0.95, 0.0, false, true)
+
         SetEntityHeading(Ped, heading)
         FreezeEntityPosition(Ped, true)
         loadAnimDict( anim )
